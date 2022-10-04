@@ -2,9 +2,13 @@ package org.example;
 
 public interface Graph {
     void addVertex(String label);
+
     boolean addEdge(String startLabel, String secondLabel, int distance);
+
     int getSize();
+
     int findShortWay(String start, String end);
+
     void display();
 
     /**
